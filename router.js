@@ -9,4 +9,10 @@ module.exports = function(app){
     app.route('/')
     //rute dialihkan ke export.index di controller.js
         .get(jsonku.index);
+
+    app.route('/get')
+        .get(jsonku.tampildata);
+
+    app.route('/get/:id')
+        .get(jsonku.tampilid);
 }
