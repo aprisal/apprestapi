@@ -18,4 +18,10 @@ module.exports = function(app){
 
     app.route('/post')
         .post(jsonku.tambah);
+
+    app.route('/put')
+        .put(jsonku.ubah);
+    
+    app.route('/delete')
+        .delete(jsonku.hapus);
 }

@@ -14,3 +14,16 @@ exports.ok = function(values, res){
      res.json(data);
      res.end();
 };
+
+exports.nodata = function(values, res){
+    
+    //membungkus respon dalam variabel data
+    var data = {
+        'status' : 400,
+        'values' : values
+    };
+
+    //membuat variabel data dalam bentuk json
+     res.json(data);
+     res.end();
+};
